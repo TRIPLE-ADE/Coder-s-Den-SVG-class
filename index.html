@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        main{
+            width:50vh;
+            height: 50vh;
+            /* background: aqua; */
+            margin: auto;
+            position: relative;
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+            background:transparent;
+            position: absolute;
+            border-radius:50% ;
+            z-index: 100;
+        }
+        main > div{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* background: green; */
+            position: absolute;
+        }
+        main > div > div div{
+            width: 25%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: purple;
+            position: absolute;
+        }
+        main > div > div{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* background: blue; */
+        }
+        .img:nth-of-type(1){
+            top:-12.5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <svg viewBox="0 0 1000 1000">
+            <circle cx="50%" cy="50%" r="50%" stroke="#000" stroke-width="10" stroke-dasharray="20 50" fill="transparent" >
+            </circle>
+        </svg>
+        <div>
+            <div>
+                <div class="img">
+                </div>
+                <div class="img">
+                </div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
